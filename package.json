@@ -1,0 +1,16 @@
+{
+  "name": "whatsapp-bot",
+  "version": "1.0.0",
+  "description": "بوت واتساب يعمل على Railway باستخدام whatsapp-web.js",
+  "main": "main.js",
+  "scripts": {
+    "start": "node main.js"
+  },
+  "dependencies": {
+    "whatsapp-web.js": "^1.18.2",
+    "qrcode-terminal": "^0.12.0",
+    "dotenv": "^16.0.3",
+    "fs-extra": "^10.0.0",
+    "axios": "^0.26.0"
+  }
+}
