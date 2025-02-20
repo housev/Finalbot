@@ -1,16 +1,19 @@
 {
   "name": "whatsapp-bot",
   "version": "1.0.0",
-  "description": "بوت واتساب يعمل على Railway باستخدام whatsapp-web.js",
+  "description": "بوت واتساب يعمل باستخدام whatsapp-web.js",
   "main": "main.js",
   "scripts": {
-    "start": "node main.js"
+    "start": "node main.js --no-sandbox --disable-setuid-sandbox"
   },
   "dependencies": {
-    "whatsapp-web.js": "^1.18.2",
+    "whatsapp-web.js": "^1.19.4",
     "qrcode-terminal": "^0.12.0",
+    "puppeteer": "^21.3.8",
     "dotenv": "^16.0.3",
-    "fs-extra": "^10.0.0",
-    "axios": "^0.26.0"
+    "fs-extra": "^10.1.0"
+  },
+  "engines": {
+    "node": ">=16.0.0"
   }
 }
